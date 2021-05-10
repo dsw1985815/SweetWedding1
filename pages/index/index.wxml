@@ -4,5 +4,5 @@
   <wave></wave>
   <view class='title'>{{showTitle}}</view>
 
-  <view class='button' bindtap='jumpIndexPage'>进入甜蜜婚礼</view>
+  <view class='button' bindtap='jumpIndexPage'>开启甜蜜的婚礼</view>
 </view>

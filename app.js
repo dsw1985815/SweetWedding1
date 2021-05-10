@@ -2,7 +2,7 @@
 App({
   onLaunch: function() {
     wx.cloud.init({
-      env: "tianmihunli01-c7b0f4",
+      env: "cloud1-6gev19tc65b830e9",
       traceUser: true
     })
     // 获取用户信息

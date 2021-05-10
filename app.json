@@ -6,11 +6,11 @@
       "pages/invite/invite",
       "pages/address/address",
       "pages/piclist/piclist"
-   ],
+      ],
    "window": {
       "backgroundTextStyle": "dark",
       "navigationBarBackgroundColor": "#d4237a",
-      "navigationBarTitleText": "甜蜜婚礼",
+      "navigationBarTitleText": "纱诺婚纱",
       "navigationBarTextStyle": "white"
    },
    "usingComponents": {
@@ -24,7 +24,7 @@
       "list": [
          {
             "pagePath": "pages/pics/pics",
-            "text": "最美婚纱",
+            "text": "婚纱妆容",
             "iconPath": "static/images/index_pic.png",
             "selectedIconPath": "static/images/index_pic_c.png"
          },

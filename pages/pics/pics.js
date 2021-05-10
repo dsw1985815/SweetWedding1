@@ -64,6 +64,8 @@ Page({
     db.collection('indexHunShaList').get({
       success(res) {
         console.log(res)
+        console.log(res.data[0])
+
         if (res.errMsg == "collection.get:ok") {
           that.setData({
             loadingState: 1,
