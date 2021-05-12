@@ -65,7 +65,7 @@ Component({
             this.triggerEvent('click');
         },
         bindgetuserinfo({ detail = {} } = {}) {
-            this.triggerEvent('getuserinfo', detail);
+            this.triggerEvent('getUserProfile', detail);
         },
         bindcontact({ detail = {} } = {}) {
             this.triggerEvent('contact', detail);

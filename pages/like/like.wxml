@@ -36,6 +36,6 @@
 
   <view class="send_msg">
     <input focus="{{isInput}}" placeholder="在这里送上您真挚的祝福吧" value='{{inputValue}}' class="send_ipt" bindinput="bindKeyInput" maxlength='-1' />
-    <button class="send_btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">送祝福</button>
+    <button class="send_btn" open-type="getUserProfile" bindgetuserinfo="getUserProfile">送祝福</button>
   </view>
 </view>

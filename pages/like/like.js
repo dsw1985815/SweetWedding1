@@ -22,7 +22,7 @@ Page({
     isloadmore: false,
     isRefresh: false,
     isInput: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserProfile')
   },
 
   /**
@@ -35,7 +35,7 @@ Page({
         userInfo: app.globalData.userInfo
       })
     } else if (that.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 由于 getUserProfile 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
         if (res.userInfo) {
@@ -45,8 +45,8 @@ Page({
         }
       }
     } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
+      // 在没有 open-type=getUserProfile 版本的兼容处理
+      wx.getUserProfile({
         success: res => {
           if (res.userInfo) {
             app.globalData.userInfo = res.userInfo
@@ -209,7 +209,7 @@ Page({
   /**
    * 获取用户信息
    */
-  getUserInfo: function(e) {
+  getUserProfile: function(e) {
     if (e.detail.userInfo) {
       app.globalData.userInfo = e.detail.userInfo
       that.setData({

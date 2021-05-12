@@ -15,8 +15,8 @@ Page({
     markers: [{
       iconPath: '../../static/images/address.png',
       id: 0,
-      latitude: 32.0140575463,
-      longitude: 114.9210906029,
+      latitude: 40.661232,
+      longitude: 109.823256,
       width: 40,
       height: 40
     }],
