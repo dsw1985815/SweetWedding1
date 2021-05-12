@@ -1,5 +1,6 @@
 // pages/detail/detail.js
-var common = require('../../utils/common.js')
+const db = wx.cloud.database()
+const combos = db.collection('combos')
 
 Page({
 
@@ -7,21 +8,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isAdd: false
-
+    article: {}
   },
 
   /**
-   * 自定义函数--添加收藏
+   * 自定义函数--添加到收藏夹
    */
   addFavorites: function() {
-    // 获取新闻数据
     let article = this.data.article
-
-    // 添加到本地缓存中
-    wx.setStorageSync(article.id, article)
-
-    // 更新按钮的显示
+    wx.setStorageSync(article._id, article)
     this.setData({
       isAdd: true
     })
@@ -31,53 +26,53 @@ Page({
    * 自定义函数--取消收藏
    */
   cancelFavorites: function() {
-    // 获取新闻数据
     let article = this.data.article
-
-    // 从本地缓存中删除
-    wx.removeStorageSync(article.id)
-
-    // 更新按钮的显示
+    console.log(article)
+    wx.removeStorageSync(article._id)
     this.setData({
       isAdd: false
     })
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // console.log(options.id)
-
-    // 获取页面跳转来时携带的新闻id
+    // 显示loading提示框
+    wx.showLoading({
+      title: '数据加载中'
+    })
+    console.log(options)
+    // 获取新闻编号
     let id = options.id
-
-    // 检查当前新闻是否在收藏夹中
+    //根据新闻_id查找是否在收藏夹里
     let article = wx.getStorageSync(id)
 
-    // 如果已经存在
-    if(article!=""){
-      // 直接更新新闻数据
+    //新闻在收藏夹中
+    if (article != '') {
+      // 更新页面上的新闻信息和收藏状态
       this.setData({
-        article:article,
-        isAdd:true
+        article: article,
+        isAdd: true
+      })
+      // 隐藏loading提示框
+      wx.hideLoading()
+    }
+    //新闻不在收藏夹中
+    else {
+      // 根据新闻id在云数据集中查找新闻内容
+      combos.doc(id).get({
+        success: res => {
+          // 更新页面上的新闻信息和收藏状态
+          this.setData({
+            article: res.data,
+            isAdd: false
+          })
+          // 隐藏loading提示框
+          wx.hideLoading()
+        }
       })
     }
-    // 如果新闻不存在
-    else{
-      // 获取新闻数据
-      let result = common.getNewsDetail(id)
-
-      // 更新新闻数据
-      if (result.code == 200) {
-        this.setData({
-          article: result.news
-        })
-      }
-    }
-
-
   },
 
   /**

@@ -113,12 +113,17 @@ Page({
     let keys = info.keys 
 
     // 获取新闻总数量
-    let num = keys.length
+    let num = 0
 
     let myList = []
-    for (var i = 0; i < num; i++) {
+    for (var i = 0; i < keys.length; i++) {
       let obj = wx.getStorageSync(keys[i])
-      myList.push(obj)
+      console.log(obj.title)
+      console.log(obj.title!=undefined)
+      if(obj.title!=undefined){
+        myList.push(obj)
+        num++
+      }
     }
 
     // 更新新闻列表

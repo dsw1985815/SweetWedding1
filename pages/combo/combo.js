@@ -1,5 +1,10 @@
-//index.js
+// pages/index/index.js
 var common = require('../../utils/common.js')
+const db = wx.cloud.database()
+const combos = db.collection('combos')
+
+var row = 5 //每次读取的新闻数量
+var page = 0 //当前是第几页
 
 Page({
 
@@ -7,86 +12,92 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // 幻灯片素材
-    swiperImg:[
-      { src:'cloud://cloud1-6gev19tc65b830e9.636c-cloud1-6gev19tc65b830e9-1305734786/shanuo/套餐A.jpg'},
-      { src:'cloud://cloud1-6gev19tc65b830e9.636c-cloud1-6gev19tc65b830e9-1305734786/shanuo/套餐B.jpg'},
-      { src:'cloud://cloud1-6gev19tc65b830e9.636c-cloud1-6gev19tc65b830e9-1305734786/shanuo/套餐C.jpg'}
-    ]
+
   },
 
   /**
- * 自定义函数--跳转新页面浏览新闻内容
- */
-  goToDetail: function (e) {
-    // 获取新闻id
-    let id = e.currentTarget.dataset.id
-
-    // 跳转新页面
-    wx.navigateTo({
-      url: '../detail/detail?id='+id,
-    })
+   * 自定义函数-跳转新闻浏览页面
+   */
+  goToDetail: function(e) {
+    //console.log(e.currentTarget.dataset.id)
+    common.goToDetail(e.currentTarget.dataset.id)
   },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    // 获取新闻列表
-    let list = common.getNewsList()
-
-    // 更新新闻列表
-    this.setData({
-      newsList:list
+  onLoad: function(options) {
+    combos.limit(row).get({
+      success: res => {
+        console.log(res)
+        this.setData({
+          newsList: res.data
+        })
+      }
     })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
-
+  onReachBottom: function() {
+    // 翻下一页
+    page++
+    // 获取当前页面的新闻记录
+    combos.skip(row * page).limit(row).get({
+      success: res => {
+        // 获取原有的新闻记录
+        let old_data = this.data.newsList
+        // 获取新页面的新闻记录
+        let new_data = res.data
+        // 更新首页新闻列表
+        this.setData({
+          newsList: old_data.concat(new_data)
+        })
+      }
+    })
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
