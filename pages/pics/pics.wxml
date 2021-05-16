@@ -3,21 +3,21 @@
 <view wx:else class='pageStyle'>
   <view class="haibao">
     <swiper indicator-dots="true" indicator-color='#FFC0CB' indicator-active-color='#d4237a' autoplay='true' circular='true' interval='5000' duration='500'>
-      <block wx:for="{{pageData.banner}}">
+      <block wx:for="{{imagetypelist}}">
         <swiper-item>
-          <image class='imageBener' src="{{item.imageurl}}" id='{{item.imagetype}}' bindtap='bannerimageClick' mode='widthFix'></image>
+          <image class='imageBener' src="{{item.coverurl}}" id='{{item.typename}}' bindtap='bannerimageClick' mode='widthFix'></image>
         </swiper-item>
       </block>
-    </swiper>
+    </swiper> 
   </view>
 
-  <block wx:for="{{pageData.imagetypelist}}">
-    <view class='listStyle' bindtap='listimageClick' id='{{item.imagetype}}'>
+  <block wx:for="{{imagetypelist}}">
+    <view class='listStyle' bindtap='listimageClick' id='{{item.typename}}'>
       <view class='rowView'>
         <view class='title'>{{item.typename}}</view>
         <view class='moreView'>查看更多></view>
       </view>
-      <image class='imageItem' src="{{item.imageurl}}" mode='widthFix'></image>
+      <image class='imageItem' src="{{item.coverurl}}" mode='widthFix'></image>
     </view>
   </block>
   <view class='bottomView'></view>

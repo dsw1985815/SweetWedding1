@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imagetype: '',
+    typename: '',
     loadingState: 0,
     pagerList: [],
     pagersize: 16,
@@ -24,7 +24,7 @@ Page({
   onLoad: function(options) {
     that = this
     that.setData({
-      imagetype: options.imagetype
+      typename: options.typename
     })
     that.getPageData()
   },
@@ -37,7 +37,7 @@ Page({
     var size = that.data.pagersize
     console.log(ye)
     db.collection('picListDetails').where({
-        imagetype: that.data.imagetype
+        typename: that.data.typename
       }).skip(ye).limit(size)
       .get()
       .then(res => {

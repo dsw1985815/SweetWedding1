@@ -13,7 +13,10 @@ Page({
     height: wx.getSystemInfoSync().windowHeight,
     loadingState: 0,
     pageData: null,
+    imagetypelist:null,
     isPlayingMusic: true,
+    currentMusicOrder : 0,
+    currentMusicSrc : ''
   },
 
   /**
@@ -61,11 +64,22 @@ Page({
    * 获取页面数据
    */
   getPageData: function() {
+    db.collection('photoTypes').get({success(res) {
+      if (res.errMsg == "collection.get:ok") {
+        that.setData({
+          loadingState: 1,
+          imagetypelist: res.data,
+        })
+      } else {
+        that.setData({
+          loadingState: 3
+        })
+      }
+    }
+  })
+
     db.collection('indexHunShaList').get({
       success(res) {
-        console.log(res)
-        console.log(res.data[0])
-
         if (res.errMsg == "collection.get:ok") {
           that.setData({
             loadingState: 1,
@@ -73,9 +87,13 @@ Page({
           })
           //设置背景音乐
           innerAudioContext.autoplay = true
-          innerAudioContext.loop = true
+          innerAudioContext.loop = false
+          let a = Math.random()*(that.data.pageData.backMusic.length)
+          let i = Math.floor(a)
           if (that.data.pageData.backMusic) {
-            innerAudioContext.src = that.data.pageData.backMusic
+            innerAudioContext.src = that.data.pageData.backMusic[i].src
+            currentMusicOrder = that.data.pageData.backMusic[i].order
+            currentMusicSrc = that.data.pageData.backMusic[i].src
           }
         } else {
           that.setData({
@@ -90,9 +108,9 @@ Page({
    * banner的照片点击
    */
   bannerimageClick: function(e) {
-    let imagetype = e.currentTarget.id
+    let typename = e.currentTarget.id
     wx.navigateTo({
-      url: '../piclist/piclist?imagetype=' + imagetype,
+      url: '../piclist/piclist?typename=' + typename,
     })
   },
 
@@ -100,9 +118,9 @@ Page({
    * banner的照片点击
    */
   listimageClick: function(e) {
-    let imagetype = e.currentTarget.id
+    let typename = e.currentTarget.id
     wx.navigateTo({
-      url: '../piclist/piclist?imagetype=' + imagetype,
+      url: '../piclist/piclist?typename=' + typename,
     })
   },
 
@@ -170,6 +188,9 @@ Page({
       that.setData({
         isPlayingMusic: true
       })
+      let a = Math.random()*(that.data.pageData.backMusic.length)
+      let i = Math.floor(a)
+      innerAudioContext.src = that.data.pageData.backMusic[i].src
       innerAudioContext.play();
     }
   }

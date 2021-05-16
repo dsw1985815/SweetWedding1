@@ -1,6 +1,6 @@
 // pages/my/my.js
 const db = wx.cloud.database();
-const shanuo = db.collection('user');
+const user = db.collection('user');
 var app = getApp();
 var userInfo;
 var that;
@@ -11,7 +11,8 @@ Page({
    */
   data: {
     // 收藏新闻总数
-    num: 0
+    num: 0,
+    _openid : ''
 
   },
 
@@ -29,7 +30,8 @@ Page({
       this.setData({
         isLogin: true,
         src: info.avatarUrl,
-        nickName: info.nickName
+        nickName: info.nickName,
+        _openid : info._openid
       })
       // 获取收藏列表
       this.getMyFavorites()
@@ -52,14 +54,14 @@ Page({
             console.log('getOpenid')
             console.log(res.result.openid)
             let openid = res.result.openid;
-            shanuo.where({
+            user.where({
                 _openid: openid,
               })
               .get().then(ress => {
                 console.log('ressressressressressressressress', ress.data[0])
                 //如果没有查到 就添加
                 if (ress.data.length == 0) {
-                  shanuo.add({
+                  user.add({
                     data: info,
                     success: res => {
                     },
@@ -79,8 +81,12 @@ Page({
                 this.setData({
                   isLogin: true,
                   src: info.avatarUrl,
-                  nickName: info.nickName
+                  nickName: info.nickName,
+                  _openid : openid
                 })
+                if(res.result.openid=='o6XxT5XFA2xAghl5nHl7QU2lIQFY'){
+                  console.log('thisieme')
+                }
                 // 获取收藏列表
                 this.getMyFavorites()
               })

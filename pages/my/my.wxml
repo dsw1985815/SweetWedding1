@@ -7,7 +7,10 @@
   </block>
   <!-- <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登陆，点此登陆</button> -->
   <button wx:else  catchtap="getUserInfo">未登陆，点此登陆</button>
+  <button wx:if="{{_openid=='o6XxT5XFA2xAghl5nHl7QU2lIQFY'}}" catchtap="gotoFace">进入管理后台</button>
 </view>
+
+
 
 <!-- 我的收藏 -->
 <view id="myFavorites">
@@ -20,3 +23,6 @@
     </view>
   </view>
 </view>
+
+
+
