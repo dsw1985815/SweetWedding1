@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="139f7feb-9bb2-442d-a4da-f2d6a87729b6" name="Default Changelist" comment="提交最新改动">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add/add.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add/add.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add/add.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/face/face.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/face/face.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/face/face.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/face/face.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/intro/intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/intro/intro.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/intro/intro.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/intro/intro.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/skin/skin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/skin/skin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/skin/skin.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/skin/skin.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/wave/wave.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/wave/wave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/combo/combo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/combo/combo.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/invite/invite.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/invite/invite.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/like/like.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/like/like.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/main.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/piclist/piclist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/piclist/piclist.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\sunkama\.m2\repository" />
+        <option name="mavenHome" value="C:\software\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../../software/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1sbuvKlaNeCoNZwBlpebI1rXoul" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="139f7feb-9bb2-442d-a4da-f2d6a87729b6" name="Default Changelist" comment="" />
+      <created>1621153840884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621153840884</updated>
+      <workItem from="1621153843588" duration="1656000" />
+      <workItem from="1621164622415" duration="4555000" />
+    </task>
+    <task id="LOCAL-00001" summary="提交最新改动">
+      <created>1621154270441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621154270441</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交最新改动" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交最新改动" />
+  </component>
+</project>

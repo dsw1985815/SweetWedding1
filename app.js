@@ -1,6 +1,9 @@
 //app.js
 App({
-  onLaunch: function() {
+  globalData: {
+    userInfo: null
+  },
+  onLaunch: function () {
     wx.cloud.init({
       env: "cloud1-6gev19tc65b830e9",
       traceUser: true
@@ -25,8 +28,5 @@ App({
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null
   }
 })

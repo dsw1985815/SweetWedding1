@@ -1,35 +1,35 @@
 <!--index.wxml-->
-<view class='box'>
-  <view class='title'>纱诺新娘</view>
+<view class='main_box'>
+  <view class='main_title'>纱诺新娘</view>
   <image src='cloud://cloud1-6gev19tc65b830e9.636c-cloud1-6gev19tc65b830e9-1305734786/shanuo/banner_小图.jpg' style='width:100%' mode='widthFix'></image>
   <view class='content'>
     <text></text>
   </view>
 </view>
-<view class='box'>
-  <view class='title'>活动背景</view>
+<view class='main_box'>
+  <view class='main_title'>公司背景</view>
   <view class='content'>
     <text>纱诺新娘是由一群热爱婚庆服务并具有多年行业经验的有活力、时尚的年轻人组成。摄影、彩妆、结婚礼服、场景布置等服务都是由专业从事该行业多年的小伙伴提供，我们本着诚信经营长远发展道路观，历经多年耕耘，步履扎实，稳健发展，在包头婚庆行业具有较强的影响力，致力于更广阔的前景开发。</text>
   </view>
 </view>
-<view class='box'>
-  <view class='title'>客户服务</view>
+<view class='main_box'>
+  <view class='main_title'>客户服务</view>
   <view class='content'>
     <view class='bar' wx:for='{{guest}}' wx:key='guest{{index}}'>
       <image class='avatar' src='{{item.avatar}}' mode='widthFix'></image>
-      <button class="btn" bindtap='call' >{{item.phoneNumber}}</button>
-    </view> 
+      <button class="main_btn" bindtap='call' >{{item.phoneNumber}}</button>
+    </view>
     <view class="bar">
       <image class='avatar'  mode="aspectFill" src="/static/images/avatar/avatar1.jpg"></image>
-      <button class="btn" open-type="contact" >{{btn_txt}}</button>
+      <button class="main_btn" open-type="contact" >{{btn_txt}}</button>
     </view>
   </view>
 </view>
-<view class='box'>
-  <view class='title'>店铺地址</view>
+<view class='main_box'>
+  <view class='main_title'>店铺地址</view>
   <view class='content'>
     <text>内蒙古 包头市 昆区 宝麒商务区A1</text>
     <map latitude='{{lat}}' longitude='{{lon}}'></map>
-    <button bindtap='showGuide'>查看详情</button>
+    <button class="main_btn2" bindtap='showGuide'>查看详情</button>
   </view>
 </view>

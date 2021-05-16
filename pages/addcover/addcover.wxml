@@ -1,0 +1,20 @@
+<!--pages/add/add.wxml-->
+<view class="container">
+  <!-- 上传按钮 -->
+  <button type="warn" bindtap="upload">点击此处上传封面</button>
+
+  <!-- 已上传图片区域 -->
+  <view class="photoBox">
+    <!-- 标题 -->
+    <text>{{typename}}  的封面</text> 
+
+    <!-- 图片集 -->
+    <view>
+      <block wx:for="{{historyPhotos}}" wx:key="history{{index}}">
+        <image src="{{item.coverurl}}"></image>
+      </block>
+    </view>
+
+  </view>
+
+</view>

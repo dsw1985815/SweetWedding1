@@ -9,7 +9,7 @@
 </swiper>
 
 <!-- 新闻列表 -->
-<view id='news-list'>
+<view class='news-list'>
     <view class='list-item' wx:for='{{newsList}}' wx:key='news{{index}}' wx:for-item='news'>
           <image src='{{news.poster}}'></image>
           <text data-id='{{news._id}}' bindtap='goToDetail'>◇{{news.title}} —— {{news.add_date}} —— 特价￥{{news.price}}</text>

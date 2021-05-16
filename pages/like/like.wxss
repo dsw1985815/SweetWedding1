@@ -29,12 +29,7 @@
   margin-right: 20rpx;
 }
 
-.name {
-  color: #d4237a;
-  font-size: 16px;
-  word-break:break-all;
-  white-space:pre-wrap;
-}
+
 
 .content {
   color: #000;
@@ -56,12 +51,6 @@
   flex-wrap: wrap;
   margin-top: 8px;
 }
-
-.huiUsername{
-  color: #d4237a;
-  font-size: 14px;
-}
-
 .huifuContent{
   color: #000;
   font-size: 14px;
@@ -91,19 +80,6 @@
   background-color: #f5f5f5;
   border-radius: 5px;
 }
-
-.send_btn {
-  color: #fff;
-  width: calc(100% - 560rpx);
-  height: 80rpx;
-  font-size: 30rpx;
-  line-height: 80rpx;
-  background: #d4237a;
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
-  margin-right: 20rpx;
-}
-
 .cradView {
   width: 670rpx;
   background-color: #fff;
@@ -142,18 +118,3 @@
   z-index: 98;
 }
 
-.cardText {
-  width: calc(100% - 40rpx);
-  color: #d4237a;
-  font-size: 16px;
-  padding-top: 40rpx;
-  padding-bottom: 40rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  margin-top: 20rpx;
-  text-align: center;
-  border-radius: 10rpx;
-  background-color: #d4237a10;
-  word-break:break-all;
-  white-space:pre-wrap;
-}

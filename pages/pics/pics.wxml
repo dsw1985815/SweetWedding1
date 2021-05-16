@@ -8,13 +8,13 @@
           <image class='imageBener' src="{{item.coverurl}}" id='{{item.typename}}' bindtap='bannerimageClick' mode='widthFix'></image>
         </swiper-item>
       </block>
-    </swiper> 
+    </swiper>
   </view>
 
   <block wx:for="{{imagetypelist}}">
     <view class='listStyle' bindtap='listimageClick' id='{{item.typename}}'>
       <view class='rowView'>
-        <view class='title'>{{item.typename}}</view>
+        <view class='pics_title'>{{item.typename}}</view>
         <view class='moreView'>查看更多></view>
       </view>
       <image class='imageItem' src="{{item.coverurl}}" mode='widthFix'></image>

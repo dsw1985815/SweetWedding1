@@ -2,7 +2,7 @@
 <loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
 <view wx:else>
   <wave></wave>
-  <view class='title'>{{showTitle}}</view>
+  <view class="index_title">{{showTitle}}</view>
 
-  <view class='button' bindtap='jumpIndexPage'>开启甜蜜的婚礼</view>
+  <view class='index_button' bindtap='jumpIndexPage'>开启甜蜜的婚礼</view>
 </view>

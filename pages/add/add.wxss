@@ -1,0 +1,22 @@
+/* pages/add/add.wxss */
+/* 已上传图片区域 */
+@import "../skin/skin.wxss";
+
+.photoBox{
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 标题样式 */
+.photoBox text{
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+/* 图片样式 */
+.photoBox image{
+  width: 250rpx;
+  height: 250rpx;
+  float: left;
+}

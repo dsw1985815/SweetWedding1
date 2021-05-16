@@ -1,28 +1,5 @@
 /**index.wxss**/
 /* 区域整体样式 */
-.box {
-  border: 2rpx solid #d4237a;
-  /*边框*/
-  color: #d4237a;
-  /*字体颜色*/
-  margin: 15rpx;
-  /*外边距*/
-  padding: 15rpx;
-  /*内边距*/
-}
-
-/* 区域标题样式 */
-.title {
-  font-size: 18pt;
-  /*字体大小*/
-  font-weight: bold;
-  /*字体加粗*/
-  padding-bottom: 10rpx;
-  /*底端内边距*/
-  border-bottom: 2rpx dashed #d4237a;
-  /*边框*/
-}
-
 /* 区域内容样式 */
 .content {
   font-size: 12pt;
@@ -55,20 +32,7 @@
   /*右侧外边距*/
 }
 
-.btn {
-  display: flex;
-  /*flex模型布局*/
-  flex-direction: row;
-  /*水平布局*/
-  align-items: top;
-  /*垂直方向居中对齐*/
-  font-size: 16pt;
-  /*字体大小*/
-  margin: 10rpx 0;
-  /*外边距上下10rpx，左右0*/
-  background-color: #d4237a;
 
-}
 
 /* 会议地点区域：地图样式 */
 map {
@@ -79,9 +43,3 @@ map {
 }
 
 /* 会议地点区域：按钮样式 */
-button {
-  color: white;
-  /*字体颜色*/
-  background-color: #d4237a;
-  /*背景颜色*/
-}

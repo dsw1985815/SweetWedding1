@@ -15,8 +15,13 @@ Page({
     _openid : ''
 
   },
-
  
+  gotoFace: function (e) {
+    wx.navigateTo({
+      url: '../face/face',
+    })
+  },
+
   getUserInfo: function (e) {
     if(!(null||undefined)){
       console.log("test")
@@ -58,7 +63,6 @@ Page({
                 _openid: openid,
               })
               .get().then(ress => {
-                console.log('ressressressressressressressress', ress.data[0])
                 //如果没有查到 就添加
                 if (ress.data.length == 0) {
                   user.add({

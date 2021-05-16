@@ -1,7 +1,8 @@
 page{
   background-color: #fff;
 }
-.title {
+@import "../skin/skin.wxss";
+.index_title {
   color: #fff;
   font-size: 18px;
   text-align: center;
@@ -11,26 +12,3 @@ page{
   top: 10%;
 }
 
-.button {
-  font-size: 16px;
-  margin-left: 10%;
-  width: 80%;
-  background-color: #d4237a;
-  color: #fff;
-  position: fixed;
-  bottom: 100rpx;
-  text-align: center;
-  height: 85rpx;
-  line-height: 85rpx;
-  border-radius: 10rpx;
-}
-
-.number {
-  color: #d4237a;
-  position: fixed;
-  bottom: 10%;
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-}

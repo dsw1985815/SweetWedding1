@@ -1,0 +1,16 @@
+<!--pages/intro/intro.wxml-->
+<!-- 图书详情页容器 -->
+<view class="intro-container">
+  <!-- 图书封面图片 -->
+  <image src="{{coverurl}}" mode="widthFix"></image>
+
+  <!-- 图书信息介绍 -->
+  <view class="intro-box">
+     <text>照片数量：{{count}}</text>
+     <text>最后上传日期：{{addDate}}</text>
+  </view>
+
+  <button class="floatBtn" type="warn" bindtap="goToAddCaver">上传封面</button>
+  <button class="floatBtn" type="primary" bindtap="goToAdd">上传图片</button>
+
+</view>

@@ -8,11 +8,17 @@
       "pages/detail/detail",
       "pages/my/my",
       "pages/main/main",
-      "pages/piclist/piclist"
+      "pages/skin/skin",
+      "pages/piclist/piclist",
+      "pages/add/add",
+      "pages/addcover/addcover",
+      "pages/intro/intro",
+      "pages/face/face"
+
       ],
    "window": {
       "backgroundTextStyle": "dark",
-      "navigationBarBackgroundColor": "#d4237a",
+      "navigationBarBackgroundColor": "#0eaa90",
       "navigationBarTitleText": "纱诺新娘",
       "navigationBarTextStyle": "white"
    },
@@ -23,7 +29,7 @@
       "backgroundColor": "#fff",
       "borderStyle": "black",
       "color": "#8a8a8a",
-      "selectedColor": "#d4237a",
+      "selectedColor": "#0eaa90",
       "list": [
          {
             "pagePath": "pages/pics/pics",
