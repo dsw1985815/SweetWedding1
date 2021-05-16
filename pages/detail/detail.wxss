@@ -34,3 +34,16 @@ button{
   height: 100rpx;
   margin: 20rpx auto;
 }
+text {
+
+  word-break: keep-all;
+  
+  word-wrap: break-word;
+  
+  }
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }

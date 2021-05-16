@@ -3,6 +3,5 @@
 <view wx:else>
   <wave></wave>
   <view class="index_title">{{showTitle}}</view>
-
   <view class='index_button' bindtap='jumpIndexPage'>开启甜蜜的婚礼</view>
 </view>
