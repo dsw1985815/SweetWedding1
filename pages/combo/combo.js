@@ -3,6 +3,8 @@ var common = require('../../utils/common.js')
 const db = wx.cloud.database()
 const combos = db.collection('combos')
 
+var that = this
+
 var row = 5 //每次读取的新闻数量
 var page = 0 //当前是第几页
 
@@ -12,7 +14,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    comborollinglist:null
   },
 
   /**
@@ -28,6 +30,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    that = this
+    that.getComboRollingData()
+    that.getComboListData()
+  },
+  getComboRollingData : function (){
+    db.collection('picListDetails').where({
+      typename: '套餐滚动图'
+      })
+      .get({
+        success(res) {
+          if (res.errMsg == "collection.get:ok") {
+            that.setData({
+              loadingState: 1,
+              comborollinglist: res.data,
+            })
+            console.log(123)
+            console.log(comborollinglist)
+          } else {
+            that.setData({
+              loadingState: 3
+            })
+          }
+        }
+      })
+  },
+
+  getComboListData : function (){
     combos.limit(row).get({
       success: res => {
         console.log(res)
@@ -37,6 +66,7 @@ Page({
       }
     })
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

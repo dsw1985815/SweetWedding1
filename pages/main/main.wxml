@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--main.wxml  -->
 <view class='main_box'>
   <view class='main_title'>纱诺新娘</view>
   <image src='cloud://cloud1-6gev19tc65b830e9.636c-cloud1-6gev19tc65b830e9-1305734786/shanuo/banner_小图.jpg' style='width:100%' mode='widthFix'></image>

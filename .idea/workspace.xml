@@ -2,44 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139f7feb-9bb2-442d-a4da-f2d6a87729b6" name="Default Changelist" comment="提交最新改动">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/add/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/add/add.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/add/add.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/add/add.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/face/face.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/face/face.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/face/face.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/face/face.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/intro/intro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/intro/intro.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/intro/intro.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/intro/intro.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/skin/skin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/skin/skin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/skin/skin.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/skin/skin.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/wave/wave.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/wave/wave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/add/add.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add/add.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/addcover/addcover.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/combo/combo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/combo/combo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/combo/combo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/combo/combo.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/invite/invite.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/invite/invite.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/like/like.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/like/like.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main/main.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main/main.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/my.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/piclist/piclist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/piclist/piclist.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pics/pics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_address_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_address_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_fq_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_fq_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_invite_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_invite_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_like_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_like_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/index_pic_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_pic_c.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -93,15 +73,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1621153840884</updated>
       <workItem from="1621153843588" duration="1656000" />
-      <workItem from="1621164622415" duration="4555000" />
+      <workItem from="1621164622415" duration="5191000" />
+      <workItem from="1621214922587" duration="2583000" />
+      <workItem from="1621769203676" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="提交最新改动">
       <created>1621154270441</created>
@@ -125,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621154270441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提交最新改动">
+      <created>1621171589374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621171589375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

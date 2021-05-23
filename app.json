@@ -33,14 +33,14 @@
       "list": [
          {
             "pagePath": "pages/pics/pics",
-            "text": "客户展示",
+            "text": "客片展示",
             "iconPath": "static/images/index_pic.png",
             "selectedIconPath": "static/images/index_pic_c.png"
          },
          {
             "pagePath": "pages/combo/combo",
-            "iconPath": "static/images/index_like.png",
-            "selectedIconPath": "static/images/index_like_c.png",
+            "iconPath": "static/images/index_invite.png",
+            "selectedIconPath": "static/images/index_invite_c.png",
             "text": "选择套餐"
          },
          {
@@ -51,8 +51,8 @@
          },
          {
             "pagePath": "pages/my/my",
-            "iconPath": "static/images/index_fq.png",
-            "selectedIconPath": "static/images/index_fq_c.png",
+            "iconPath": "static/images/index_like.png",
+            "selectedIconPath": "static/images/index_like_c.png",
             "text": "我的婚礼"
          }
       ]

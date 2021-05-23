@@ -1,17 +1,18 @@
-<!--pages/index/index.wxml-->
+<!--pages/index/index.wxml 套餐主页-->
 <!-- 幻灯片 -->
 <swiper indicator-dots autoplay interval='5000' duration='500'>
-  <block wx:for='{{[newsList[0],newsList[1]]}}' wx:key='swiper{{index}}'>
+  <block wx:for="{{comborollinglist}}">
     <swiper-item>
-      <image src='{{item.poster}}'></image>
+      <image class='imageBener' src="{{item.imageurl}}" id='{{item.typename}}'></image>
     </swiper-item>
   </block>
 </swiper>
 
-<!-- 新闻列表 -->
+<!-- 套餐列表 -->
 <view class='news-list'>
-    <view class='pics_title' wx:for='{{newsList}}' wx:key='news{{index}}' wx:for-item='news' data-id='{{news._id}}' bindtap='goToDetail'>
-      <image src='{{news.poster}}'></image>
-      <text >◇{{news.title}} —— —— 特价￥{{news.price}}</text>
-    </view>
+  <view class='pics_title' wx:for='{{newsList}}' wx:key='news{{index}}' wx:for-item='news' data-id='{{news._id}}'
+    bindtap='goToDetail'>
+    <view><image src='{{news.poster}}'></image></view>
+    <view><text>  ◇{{news.title}} —— {{news.desc}}—— 特价￥{{news.price}}</text></view>
+  </view>
 </view>

@@ -13,24 +13,26 @@ Page({
     height: wx.getSystemInfoSync().windowHeight,
     loadingState: 0,
     pageData: null,
-    imagetypelist:null,
+    imagetypelist: null,
+    rollinglist: null,
     isPlayingMusic: true,
-    currentMusicOrder : 0,
-    currentMusicSrc : ''
+    currentMusicOrder: 0,
+    currentMusicSrc: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     that = this
     that.getPageData()
+    that.getBannerData()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
     innerAudioContext.onPlay(() => {
       console.log('录音播放开始');
       that.setData({
@@ -38,47 +40,70 @@ Page({
       })
     })
 
-    innerAudioContext.onStop(() => {            
-      console.log('录音播放停止');   
+    innerAudioContext.onStop(() => {
+      console.log('录音播放停止');
       that.setData({
         isPlayingMusic: false
-      })     
+      })
     })
 
-    innerAudioContext.onEnded(() => {            
-      console.log('录音播放结束');    
+    innerAudioContext.onEnded(() => {
+      console.log('录音播放结束');
       that.setData({
         isPlayingMusic: false
-      })    
+      })
     })
 
     innerAudioContext.onPause(() => {
       console.log('录音播放暂停');
       that.setData({
         isPlayingMusic: false
-      }) 
+      })
     })
   },
 
+
+  getBannerData: function () {
+    db.collection('picListDetails').where({
+      typename: '客片展示滚动图'
+      })
+      .get({
+        success(res) {
+          if (res.errMsg == "collection.get:ok") {
+            that.setData({
+              loadingState: 1,
+              rollinglist: res.data,
+            })
+          } else {
+            that.setData({
+              loadingState: 3
+            })
+          }
+        }
+      })
+  },
   /**
    * 获取页面数据
    */
-  getPageData: function() {
-    db.collection('photoTypes').get({success(res) {
-      if (res.errMsg == "collection.get:ok") {
-        that.setData({
-          loadingState: 1,
-          imagetypelist: res.data,
-        })
-      } else {
-        that.setData({
-          loadingState: 3
-        })
+  getPageData: function () {
+    db.collection('photoTypes').where({
+      position: "list"
+    }).get({
+      success(res) {
+        if (res.errMsg == "collection.get:ok") {
+          that.setData({
+            loadingState: 1,
+            imagetypelist: res.data,
+          })
+        } else {
+          that.setData({
+            loadingState: 3
+          })
+        }
       }
-    }
-  })
+    })
 
-    db.collection('indexHunShaList').get({
+    db.collection('music').get({
       success(res) {
         if (res.errMsg == "collection.get:ok") {
           that.setData({
@@ -88,7 +113,7 @@ Page({
           //设置背景音乐
           innerAudioContext.autoplay = true
           innerAudioContext.loop = false
-          let a = Math.random()*(that.data.pageData.backMusic.length)
+          let a = Math.random() * (that.data.pageData.backMusic.length)
           let i = Math.floor(a)
           if (that.data.pageData.backMusic) {
             innerAudioContext.src = that.data.pageData.backMusic[i].src
@@ -107,7 +132,7 @@ Page({
   /**
    * banner的照片点击
    */
-  bannerimageClick: function(e) {
+  bannerimageClick: function (e) {
     let typename = e.currentTarget.id
     wx.navigateTo({
       url: '../piclist/piclist?typename=' + typename,
@@ -117,7 +142,7 @@ Page({
   /**
    * banner的照片点击
    */
-  listimageClick: function(e) {
+  listimageClick: function (e) {
     let typename = e.currentTarget.id
     wx.navigateTo({
       url: '../piclist/piclist?typename=' + typename,
@@ -127,7 +152,7 @@ Page({
   /**
    * 点击重新加载
    */
-  reload: function() {
+  reload: function () {
     that.setData({
       loadingState: 0
     })
@@ -137,7 +162,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
     if (innerAudioContext.paused) {
       innerAudioContext.play();
     }
@@ -146,39 +171,39 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   },
 
-  play: function(event) {
+  play: function (event) {
     if (this.data.isPlayingMusic) {
       that.setData({
         isPlayingMusic: false
@@ -188,7 +213,7 @@ Page({
       that.setData({
         isPlayingMusic: true
       })
-      let a = Math.random()*(that.data.pageData.backMusic.length)
+      let a = Math.random() * (that.data.pageData.backMusic.length)
       let i = Math.floor(a)
       innerAudioContext.src = that.data.pageData.backMusic[i].src
       innerAudioContext.play();

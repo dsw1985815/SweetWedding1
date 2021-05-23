@@ -1,4 +1,4 @@
-<!--pages/add/add.wxml-->
+<!--pages/add/add.wxml 后台上传封面-->
 <view class="container">
   <!-- 上传按钮 -->
   <button type="warn" bindtap="upload">点击此处上传封面</button>
