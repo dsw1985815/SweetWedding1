@@ -1,8 +1,7 @@
 {
    "pages": [
-      "pages/index/index",
-      "pages/combo/combo",
       "pages/pics/pics",
+      "pages/combo/combo",
       "pages/invite/invite",
       "pages/address/address",
       "pages/detail/detail",
@@ -18,7 +17,7 @@
       ],
    "window": {
       "backgroundTextStyle": "dark",
-      "navigationBarBackgroundColor": "#0eaa90",
+      "navigationBarBackgroundColor": "#c9a09a",
       "navigationBarTitleText": "纱诺新娘",
       "navigationBarTextStyle": "white"
    },
@@ -29,30 +28,30 @@
       "backgroundColor": "#fff",
       "borderStyle": "black",
       "color": "#8a8a8a",
-      "selectedColor": "#0eaa90",
+      "selectedColor": "#c9a09a",
       "list": [
          {
             "pagePath": "pages/pics/pics",
             "text": "客片展示",
-            "iconPath": "static/images/index_pic.png",
-            "selectedIconPath": "static/images/index_pic_c.png"
+            "iconPath": "static/images/fangzi_b.png",
+            "selectedIconPath": "static/images/fangzi.png"
          },
          {
             "pagePath": "pages/combo/combo",
-            "iconPath": "static/images/index_invite.png",
-            "selectedIconPath": "static/images/index_invite_c.png",
+            "iconPath": "static/images/liwu_b.png",
+            "selectedIconPath": "static/images/liwu.png",
             "text": "选择套餐"
          },
          {
             "pagePath": "pages/main/main",
-            "iconPath": "static/images/index_address.png",
-            "selectedIconPath": "static/images/index_address_c.png",
+            "iconPath": "static/images/qunzi_b.png",
+            "selectedIconPath": "static/images/qunzi.png",
             "text": "纱诺新娘"
          },
          {
             "pagePath": "pages/my/my",
-            "iconPath": "static/images/index_like.png",
-            "selectedIconPath": "static/images/index_like_c.png",
+            "iconPath": "static/images/ido_b.png",
+            "selectedIconPath": "static/images/ido.png",
             "text": "我的婚礼"
          }
       ]

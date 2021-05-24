@@ -4,21 +4,11 @@
     <list default="true" id="139f7feb-9bb2-442d-a4da-f2d6a87729b6" name="Default Changelist" comment="提交最新改动">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/add/add.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add/add.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/addcover/addcover.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/addcover/addcover.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/combo/combo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/combo/combo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/combo/combo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/combo/combo.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main/main.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main/main.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/wave/wave.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/wave/wave.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/pics/pics.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_address_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_address_c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_fq_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_fq_c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_invite_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_invite_c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_like_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_like_c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/index_pic_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/index_pic_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pics/pics.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pics/pics.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/skin/skin.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/skin/skin.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,13 +63,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,7 +88,7 @@
       <workItem from="1621153843588" duration="1656000" />
       <workItem from="1621164622415" duration="5191000" />
       <workItem from="1621214922587" duration="2583000" />
-      <workItem from="1621769203676" duration="63000" />
+      <workItem from="1621769203676" duration="4233000" />
     </task>
     <task id="LOCAL-00001" summary="提交最新改动">
       <created>1621154270441</created>
@@ -112,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621171589375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="提交最新改动">
+      <created>1621769287207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621769287207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,7 +6,7 @@ Component({
   properties: {
     backgroundColors: {
       type: Object,
-      value: "#0eaa90"
+      value: "#c9a09a0"
     },
     viewHeiht: {
       type: Number,

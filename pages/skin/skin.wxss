@@ -5,11 +5,11 @@
   /*字体加粗*/
   padding-bottom: 10rpx;
   /*底端内边距*/
-  border-bottom: 2rpx dashed #0eaa90;
+  border-bottom: 2rpx dashed #c9a09a;
   /*边框*/
 }
 .pics_title {
-  color: #0eaa90;
+  color: #c9a09a;
   font-size: 16px;
   background-color: #fff;
   border-top-left-radius: 5px;
@@ -18,7 +18,7 @@
 }
 
 .moreView{
-  color: #0eaa90;
+  color: #c9a09a;
   font-size: 12px;
   border-top-right-radius: 5px;
   background-color: #fff;
@@ -38,7 +38,7 @@
   /*字体大小*/
   margin: 10rpx 0;
   /*外边距上下10rpx，左右0*/
-  background-color: #0eaa90;
+  background-color: #c9a09a;
 
 }
 
@@ -46,14 +46,14 @@
 .main_btn2 {
   color: white;
   /*字体颜色*/
-  background-color: #0eaa90;
+  background-color: #c9a09a;
   /*背景颜色*/
 }
 
 .main_box {
-  border: 2rpx solid #0eaa90;
+  border: 2rpx solid #c9a09a;
   /*边框*/
-  color: #0eaa90;
+  color: #c9a09a;
   /*字体颜色*/
   margin: 15rpx;
   /*外边距*/
@@ -69,12 +69,12 @@
   /*字体加粗*/
   padding-bottom: 10rpx;
   /*底端内边距*/
-  border-bottom: 2rpx dashed #0eaa90;
+  border-bottom: 2rpx dashed #c9a09a;
   /*边框*/
 }
 
 .myLogin{
-  background-color: #0eaa90;
+  background-color: #c9a09a;
   height: 400rpx;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
   font-size: 16px;
   margin-left: 10%;
   width: 80%;
-  background-color: #0eaa90;
+  background-color: #c9a09a;
   color: #fff;
   position: fixed;
   bottom: 100rpx;

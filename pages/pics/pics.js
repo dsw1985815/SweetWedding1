@@ -17,7 +17,7 @@ Page({
     rollinglist: null,
     isPlayingMusic: true,
     currentMusicOrder: 0,
-    currentMusicSrc: ''
+    currentMusicSrc: '',
   },
 
   /**
@@ -136,6 +136,16 @@ Page({
     let typename = e.currentTarget.id
     wx.navigateTo({
       url: '../piclist/piclist?typename=' + typename,
+    })
+  },
+  //预览图片，放大预览
+  preview(event) {
+    console.log(event.currentTarget.dataset.src)
+    let currentUrl = event.currentTarget.dataset.src
+    
+    wx.previewImage({
+      current: currentUrl, // 当前显示图片的http链接
+      urls: this.data.imagetypelist // 需要预览的图片http链接列表
     })
   },
 

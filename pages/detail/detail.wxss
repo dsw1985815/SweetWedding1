@@ -33,6 +33,7 @@ button{
   width: 250rpx;
   height: 100rpx;
   margin: 20rpx auto;
+  font-size: 14px;
 }
 text {
 

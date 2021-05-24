@@ -111,3 +111,51 @@ swiper {
     -webkit-transform: rotate(20deg);
   }
 }
+
+
+.swiper {
+  height: 200px;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+
+.zhuti {
+  display: flex;
+  width: 375px;
+  height: 471px;
+  /* justify-content: center;
+  align-items: center; */
+  border-width: 5px;
+  flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 8px;
+}
+.hezi{
+  width: 45%;
+  height: 157px;
+  background-size: 100% 110%;
+  border: 3px solid#f7c4c3;
+  display: inline-block;
+  border-radius: 25px;
+}
+.wenzi{
+height: 157px;
+display: inline-block;
+color: #c9a09a;
+font-weight: 500;
+font-size: 20px;
+line-height: 257px;
+padding-left: 55px;
+
+}
+
+  .fenge{
+  width: 300px;
+  height: 30px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}

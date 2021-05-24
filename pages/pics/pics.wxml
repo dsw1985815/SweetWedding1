@@ -11,7 +11,25 @@
     </swiper>
   </view>
 
-  <block wx:for="{{imagetypelist}}">
+
+  <view class='fenge'></view>
+  <!-- <view class='zhuti'>
+    <navigator url="/pages/dressstore/dressstore"  class='hezi' wx:for="{{shuzu}}" style='background-image: url({{item.image}});' bindtap='hzclick' id='{{index}}'>
+      <view class='wenzi'>{{item.wtext}}</view>
+    </navigator>
+  </view> -->
+
+  <view class='zhuti'>
+    <navigator class='hezi' wx:for="{{imagetypelist}}" 
+    bindtap='listimageClick' style='background-image: url({{item.coverurl}});' id='{{item.typename}}'>
+      <view class='wenzi'>{{item.typename}}</view>
+      <!-- <image src="{{item.coverurl}}" bindtap="preview"></image> -->
+      <!-- <view class='listStyle' bindtap='listimageClick' id='{{item.typename}}'></view> -->
+    </navigator>
+  </view> 
+
+
+  <!-- <block wx:for="{{imagetypelist}}">
     <view class='listStyle' bindtap='listimageClick' id='{{item.typename}}'>
       <view class='rowView'>
         <view class='pics_title'>{{item.typename}}</view>
@@ -19,7 +37,7 @@
       </view>
       <image class='imageItem' src="{{item.coverurl}}" mode='widthFix'></image>
     </view>
-  </block>
+  </block> -->
   <view class='bottomView'></view>
 
   <view wx:if="{{isPlayingMusic}}">
